@@ -1,0 +1,4 @@
+saved_models/*
+logs/*
+!saved_models/.gitkeep
+checkpoints/

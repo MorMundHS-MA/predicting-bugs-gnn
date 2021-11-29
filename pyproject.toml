@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "thesis models"
+version = "0.1.0"
+description = ""
+authors = ["MorMundHS-MA <MorMundHS-MA@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.7"
+docopt = "^0.6.2"
+# >1.19 breaks tensorflow, see https://stackoverflow.com/a/65993776
+numpy = "~1.19"
+pymongo = "^3.11.3"
+tf2-gnn = "^2.12.0"
+# Fixed tensorflow version for now
+tensorflow="2.4.1"
+# Loading is broken with >=3, see https://github.com/keras-team/keras/issues/14265
+h5py = "~2"
+motor = "^2.4.0"
+matplotlib = "^3.4.1"
+tensorboard-plugin-profile = "^2.4.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"
